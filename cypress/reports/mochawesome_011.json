@@ -1,0 +1,178 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 4,
+    "passes": 0,
+    "pending": 0,
+    "failures": 4,
+    "start": "2021-09-29T23:42:01.367Z",
+    "end": "2021-09-29T23:42:44.173Z",
+    "duration": 42806,
+    "testsRegistered": 4,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "9100a4d4-2dbb-458f-8f3f-43ddbf1b89d3",
+      "title": "",
+      "fullFile": "cypress/integration/herokuDeploy.spec.js",
+      "file": "cypress/integration/herokuDeploy.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "18eecfd7-bea2-45ac-92a2-59f6b7760086",
+          "title": "1 - Verifica se foi feito o deploy do frontend no Heroku",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Será validado que o botão de mudar de realidade existe",
+              "fullTitle": "1 - Verifica se foi feito o deploy do frontend no Heroku Será validado que o botão de mudar de realidade existe",
+              "timedOut": null,
+              "duration": 10731,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.get(\".change-reality\").should(\"exist\");",
+              "err": {
+                "message": "AssertionError: Timed out retrying: Expected to find element: `.change-reality`, but never found it.",
+                "estack": "AssertionError: Timed out retrying: Expected to find element: `.change-reality`, but never found it.\n    at Context.eval (https://angelobittencourt-ft.herokuapp.com/__cypress/tests?p=cypress/integration/herokuDeploy.spec.js:109:31)",
+                "diff": null
+              },
+              "uuid": "52b1acd8-aebe-4b66-a26a-d95708b586e1",
+              "parentUUID": "18eecfd7-bea2-45ac-92a2-59f6b7760086",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Será validado que a pesquisa funciona como deveria",
+              "fullTitle": "1 - Verifica se foi feito o deploy do frontend no Heroku Será validado que a pesquisa funciona como deveria",
+              "timedOut": null,
+              "duration": 10448,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.contains(PESQUISAR).click();\ncy.contains(MARTIN).should(\"exist\");",
+              "err": {
+                "message": "AssertionError: Timed out retrying: Expected to find content: 'Pesquisar' but never did.",
+                "estack": "AssertionError: Timed out retrying: Expected to find content: 'Pesquisar' but never did.\n    at Context.eval (https://angelobittencourt-ft.herokuapp.com/__cypress/tests?p=cypress/integration/herokuDeploy.spec.js:112:8)",
+                "diff": null
+              },
+              "uuid": "3beea215-cafc-4558-8ba9-e542ca5f71c3",
+              "parentUUID": "18eecfd7-bea2-45ac-92a2-59f6b7760086",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Será validado que o botão de mudar de realidade funciona.",
+              "fullTitle": "1 - Verifica se foi feito o deploy do frontend no Heroku Será validado que o botão de mudar de realidade funciona.",
+              "timedOut": null,
+              "duration": 10437,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.contains(\"Mudar de Realidade\").click();\ncy.contains(PESQUISAR).click();\ncy.contains(INVERTED_MARTIN).should(\"exist\");",
+              "err": {
+                "message": "AssertionError: Timed out retrying: Expected to find content: 'Mudar de Realidade' but never did.",
+                "estack": "AssertionError: Timed out retrying: Expected to find content: 'Mudar de Realidade' but never did.\n    at Context.eval (https://angelobittencourt-ft.herokuapp.com/__cypress/tests?p=cypress/integration/herokuDeploy.spec.js:116:8)",
+                "diff": null
+              },
+              "uuid": "8c7de044-5ec9-46e4-ba7e-12c6a904d966",
+              "parentUUID": "18eecfd7-bea2-45ac-92a2-59f6b7760086",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Será validado que os botões de próxima página e página anterior funcionam",
+              "fullTitle": "1 - Verifica se foi feito o deploy do frontend no Heroku Será validado que os botões de próxima página e página anterior funcionam",
+              "timedOut": null,
+              "duration": 10449,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.contains(PESQUISAR).click();\ncy.contains(MARTIN).should(\"exist\");\ncy.contains(\"Próximo\").click();\ncy.contains(\"2\").should(\"exist\");\ncy.contains(Claudia).should(\"exist\");\ncy.contains(\"Anterior\").click();\ncy.contains(\"1\").should(\"exist\");\ncy.contains(MARTIN).should(\"exist\");",
+              "err": {
+                "message": "AssertionError: Timed out retrying: Expected to find content: 'Pesquisar' but never did.",
+                "estack": "AssertionError: Timed out retrying: Expected to find content: 'Pesquisar' but never did.\n    at Context.eval (https://angelobittencourt-ft.herokuapp.com/__cypress/tests?p=cypress/integration/herokuDeploy.spec.js:121:8)",
+                "diff": null
+              },
+              "uuid": "fc3e6040-ef26-4c83-b0e0-f5bbc497f548",
+              "parentUUID": "18eecfd7-bea2-45ac-92a2-59f6b7760086",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "52b1acd8-aebe-4b66-a26a-d95708b586e1",
+            "3beea215-cafc-4558-8ba9-e542ca5f71c3",
+            "8c7de044-5ec9-46e4-ba7e-12c6a904d966",
+            "fc3e6040-ef26-4c83-b0e0-f5bbc497f548"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 42065,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false
+      },
+      "version": "4.1.0"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "4.1.0"
+    }
+  }
+}
