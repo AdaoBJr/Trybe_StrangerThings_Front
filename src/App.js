@@ -5,9 +5,9 @@ import StrangerThings from './components/StrangerThings';
 
 function App() {
   return (
-    <div className="App">
+    <main className="App">
       <StrangerThings />
-    </div>
+    </main>
   );
 }
 
