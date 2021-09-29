@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="App">
       {process.env.DEVELOPMENT === 'true'
-        ? <h2>Em desenvolvimento</h2> : <StrangerThings /> }
+        ? <h1>Em desenvolvimento</h1> : <StrangerThings /> }
     </div>
   );
 }
