@@ -9,6 +9,7 @@ const {
   REACT_APP_HAWKINS_TIMEOUT,
   REACT_APP_UPSIDEDOWN_URL,
   REACT_APP_UPSIDEDOWN_TIMEOUT,
+  REACT_APP_DEVELOP,
 } = process.env;
 
 const getRealityClass = (hereIsTheUpsideDownWorld) => (
@@ -154,6 +155,7 @@ class StrangerThings extends React.Component {
             <button type="button" onClick={ this.nextPage }>Próximo</button>
           </div>
         </div>
+        <div>{JSON.parse(REACT_APP_DEVELOP) === true && <p>Em desenvolvimento</p>}</div>
       </div>
     );
   }
