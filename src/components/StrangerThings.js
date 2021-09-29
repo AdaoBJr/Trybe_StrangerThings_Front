@@ -10,9 +10,9 @@ const getRealityClass = (hereIsTheUpsideDownWorld) => (
 
 const TRINTA_MIL = 30000;
 
-const REACT_APP_HAWKINS_URL = process.env.REACT_APP_HAWKINS_URL || 'http://localhost:3002';
+const REACT_APP_HAWKINS_URL = process.env.REACT_APP_HAWKINS_URL || 'http://fabiomarturanojr-bk.herokuapp.com/';
 const REACT_APP_HAWKINS_TIMEOUT = process.env.REACT_APP_HAWKINS_TIMEOUT || TRINTA_MIL;
-const REACT_APP_UPSIDEDOWN_URL = process.env.REACT_APP_UPSIDEDOWN_URL || 'http://localhost:3003';
+const REACT_APP_UPSIDEDOWN_URL = process.env.REACT_APP_UPSIDEDOWN_URL || 'http://fabiomarturanojr-bd.herokuapp.com/';
 const REACT_APP_UPSIDEDOWN_TIMEOUT = process.env
   .REACT_APP_UPSIDEDOWN_TIMEOUT || TRINTA_MIL;
 
