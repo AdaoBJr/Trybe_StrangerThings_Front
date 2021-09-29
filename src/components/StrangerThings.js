@@ -18,7 +18,10 @@ const upsideDownConfig = {
   timeout: process.env.REACT_APP_UPSIDEDOWN_TIMEOUT,
 };
 
-const ENVIRONMENT = process.env.ENVIRONMENT || '';
+const ENVIRONMENT = process.env.ENVIRONMENT || 'Aqui';
+
+console.log(ENVIRONMENT);
+console.log(process.env);
 
 const charactersService = new CharactersService(strangerThingsConfig);
 const charactersUpsideDownService = new CharactersService(upsideDownConfig);
