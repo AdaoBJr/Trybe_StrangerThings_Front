@@ -4,12 +4,14 @@ import Table from './Table';
 
 require('dotenv').config();
 
+console.log(process.env);
+
 const {
+  REACT_APP_DEVELOPMENT,
   REACT_APP_HAWKINS_URL,
   REACT_APP_HAWKINS_TIMEOUT,
   REACT_APP_UPSIDEDOWN_URL,
   REACT_APP_UPSIDEDOWN_TIMEOUT,
-  DEVELOPMENT,
 } = process.env;
 
 const getRealityClass = (hereIsTheUpsideDownWorld) => (
@@ -124,7 +126,9 @@ class StrangerThings extends React.Component {
         )}` }
       >
         <div className="content strangerfy">
-          {JSON.parse(DEVELOPMENT ? <span>Em desenvolvimento</span> : '')}
+
+          { REACT_APP_DEVELOPMENT ? <span>Em desenvolvimento</span> : null}
+
           <div className="change-reality">
             <button type="button" onClick={ this.changeRealityClick }>
               {' '}
