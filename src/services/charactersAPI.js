@@ -19,5 +19,5 @@ class CharactersService {
     return this.http.get('/', { params });
   }
 }
-
+// oi
 export default CharactersService;
