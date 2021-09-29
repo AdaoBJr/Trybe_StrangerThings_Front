@@ -154,6 +154,11 @@ class StrangerThings extends React.Component {
             <button type="button" onClick={ this.nextPage }>Próximo</button>
           </div>
         </div>
+        <div>
+          {process.env.REACT_APP_DEVELOPMENT === 'true'
+            ? <p>Em desenvolvimento</p> : false}
+
+        </div>
       </div>
     );
   }
