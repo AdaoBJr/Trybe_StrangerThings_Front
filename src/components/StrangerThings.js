@@ -10,7 +10,7 @@ const { REACT_APP_HAWKINS_URL,
   REACT_APP_UPSIDEDOWN_TIMEOUT,
 } = process.env;
 
-const DEVELOPMENT = process.env.DEVELOPMENT || 'true';
+const { DEVELOPMENT } = process.env;
 
 const getRealityClass = (hereIsTheUpsideDownWorld) => (
   hereIsTheUpsideDownWorld ? 'upside-down' : 'stranger-things'
