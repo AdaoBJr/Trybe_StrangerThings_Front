@@ -6,7 +6,8 @@ import StrangerThings from './components/StrangerThings';
 function App() {
   return (
     <div className="App">
-      <StrangerThings />
+      {process.env.DEVELOPMENT === 'true'
+        ? <h2>Em desenvolvimento</h2> : <StrangerThings /> }
     </div>
   );
 }
