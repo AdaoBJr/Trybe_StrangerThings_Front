@@ -8,7 +8,6 @@ const getRealityClass = (hereIsTheUpsideDownWorld) => (
 
 const strangerThingsConfig = {
   url: 'http://localhost:3002',
-
   timeout: 30000,
 };
 
