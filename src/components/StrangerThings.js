@@ -8,7 +8,9 @@ const { REACT_APP_HAWKINS_URL,
   REACT_APP_HAWKINS_TIMEOUT,
   REACT_APP_UPSIDEDOWN_URL,
   REACT_APP_UPSIDEDOWN_TIMEOUT,
-  DEVELOPMENT } = process.env;
+} = process.env;
+
+const DEVELOPMENT = process.env.DEVELOPMENT || 'true';
 
 const getRealityClass = (hereIsTheUpsideDownWorld) => (
   hereIsTheUpsideDownWorld ? 'upside-down' : 'stranger-things'
@@ -154,7 +156,8 @@ class StrangerThings extends React.Component {
           </div>
         </div>
         <div>
-          { (DEVELOPMENT.toLowerCase() === 'true') ? <p> Em desenvolvimento</p> : false }
+          { (DEVELOPMENT === 'true')
+            ? <p className="development">Em desenvolvimento</p> : false }
         </div>
       </div>
     );
