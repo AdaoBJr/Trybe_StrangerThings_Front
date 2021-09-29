@@ -154,7 +154,7 @@ class StrangerThings extends React.Component {
           </div>
         </div>
         <div>
-          { (DEVELOPMENT) ? <p> Em desenvolvimento</p> : false }
+          { (DEVELOPMENT.toLowerCase() === 'true') ? <p> Em desenvolvimento</p> : false }
         </div>
       </div>
     );
