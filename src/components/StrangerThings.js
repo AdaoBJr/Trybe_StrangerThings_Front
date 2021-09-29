@@ -127,7 +127,7 @@ class StrangerThings extends React.Component {
       >
         <div className="content strangerfy">
 
-          { REACT_APP_DEVELOPMENT ? <span>Em desenvolvimento</span> : null}
+          { JSON.parse(REACT_APP_DEVELOPMENT) ? <span>Em desenvolvimento</span> : null}
 
           <div className="change-reality">
             <button type="button" onClick={ this.changeRealityClick }>
