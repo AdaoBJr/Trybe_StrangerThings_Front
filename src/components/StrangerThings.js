@@ -11,6 +11,7 @@ const REACT_APP_HAWKINS_URL = process.env.REACT_APP_HAWKINS_URL || 'https://brun
 const REACT_APP_HAWKINS_TIMEOUT = process.env.REACT_APP_HAWKINS_TIMEOUT || magicNumber;
 
 const REACT_APP_UPSIDEDOWN_URL = process.env.REACT_APP_UPSIDEDOWN_URL || 'https://brunobastosfer-bd.herokuapp.com/';
+
 const REACT_APP_UPSIDEDOWN_TIMEOUT = process.env
   .REACT_APP_UPSIDEDOWN_TIMEOUT || magicNumber;
 
@@ -25,7 +26,7 @@ const strangerThingsConfig = {
 
 const upsideDownConfig = {
   url: REACT_APP_UPSIDEDOWN_URL,
-  timeout: REACT_APP_UPSIDEDOWN_URL,
+  timeout: REACT_APP_UPSIDEDOWN_TIMEOUT,
 };
 
 const charactersService = new CharactersService(strangerThingsConfig);
