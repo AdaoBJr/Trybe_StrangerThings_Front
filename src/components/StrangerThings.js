@@ -16,8 +16,6 @@ const {
   REACT_APP_DEV,
 } = process.env;
 
-console.log(REACT_APP_DEV)
-
 const strangerThingsConfig = {
   url: REACT_APP_HAWKINS_URL,
   timeout: REACT_APP_HAWKINS_TIMEOUT,
