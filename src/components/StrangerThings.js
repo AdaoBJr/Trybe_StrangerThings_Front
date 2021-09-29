@@ -7,12 +7,14 @@ const getRealityClass = (hereIsTheUpsideDownWorld) => (
 );
 
 const strangerThingsConfig = {
-  url: 'http://localhost:3002',
+  url: process.env.REACT_APP_HAWKINS_URL,
+  // url: 'https://gdiccini-bk.herokuapp.com/',
   timeout: 30000,
 };
 
 const upsideDownConfig = {
-  url: 'http://localhost:3003',
+  url: process.env.REACT_APP_HAWKINS_URL,
+  // url: 'https://gdiccini-bd.herokuapp.com/',
   timeout: 30000,
 };
 
