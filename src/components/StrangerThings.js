@@ -18,7 +18,7 @@ const upsideDownConfig = {
   timeout: process.env.REACT_APP_UPSIDEDOWN_TIMEOUT,
 };
 
-const ENVIRONMENT = process.env.NODE_ENV || 'Aqui';
+const ENVIRONMENT = process.env.REACT_APP_ENVIRONMENT === production || '';
 
 console.log(ENVIRONMENT);
 console.log(process.env);
