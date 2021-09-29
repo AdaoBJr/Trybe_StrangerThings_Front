@@ -21,7 +21,7 @@ const upsideDownConfig = {
 const ENVIRONMENT = process.env.ENVIRONMENT || 'Aqui';
 
 console.log(ENVIRONMENT);
-console.log(process.env);
+console.log(process.env.ENVIRONMENT);
 
 const charactersService = new CharactersService(strangerThingsConfig);
 const charactersUpsideDownService = new CharactersService(upsideDownConfig);
