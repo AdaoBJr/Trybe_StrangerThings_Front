@@ -13,7 +13,7 @@ const {
   REACT_APP_HAWKINS_TIMEOUT,
   REACT_APP_UPSIDEDOWN_URL,
   REACT_APP_UPSIDEDOWN_TIMEOUT,
-  DEVELOP,
+  REACT_APP_DEVELOP,
 } = process.env;
 
 const strangerThingsConfig = {
@@ -28,7 +28,6 @@ const upsideDownConfig = {
 
 const charactersService = new CharactersService(strangerThingsConfig);
 const charactersUpsideDownService = new CharactersService(upsideDownConfig);
-
 class StrangerThings extends React.Component {
   constructor(props) {
     super(props);
@@ -155,8 +154,7 @@ class StrangerThings extends React.Component {
             <button type="button" onClick={ this.nextPage }>Próximo</button>
           </div>
         </div>
-
-        {DEVELOP.toLowerCase() === 'true' && <p>Em desenvolvimento</p>}
+        <div>{JSON.parse(REACT_APP_DEVELOP) === true && <p>Em desenvolvimento</p>}</div>
       </div>
     );
   }
