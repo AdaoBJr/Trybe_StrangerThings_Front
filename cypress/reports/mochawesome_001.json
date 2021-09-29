@@ -1,0 +1,167 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2021-09-29T21:43:20.156Z",
+    "end": "2021-09-29T21:43:21.163Z",
+    "duration": 1007,
+    "testsRegistered": 4,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 3,
+    "hasSkipped": true
+  },
+  "results": [
+    {
+      "uuid": "d6544427-7bdf-4028-b097-48e2e0ddceaf",
+      "title": "",
+      "fullFile": "cypress/integration/herokuDeploy.spec.js",
+      "file": "cypress/integration/herokuDeploy.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "cb85c5fc-4b75-4629-af76-b396e94ad16b",
+          "title": "1 - Verifica se foi feito o deploy do frontend no Heroku",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Será validado que o botão de mudar de realidade existe",
+              "fullTitle": "1 - Verifica se foi feito o deploy do frontend no Heroku Será validado que o botão de mudar de realidade existe",
+              "timedOut": null,
+              "duration": 786,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.get(\".change-reality\").should(\"exist\");",
+              "err": {
+                "message": "CypressError: `cy.visit()` failed trying to load:\n\nhttps://undefined-ft.herokuapp.com/.\n\nThe response we received from your web server was:\n\n  > 404: Not Found\n\nThis was considered a failure because the status code was not `2xx`.\n\nIf you do not want status codes to cause failures pass the option: `failOnStatusCode: false`\n\nBecause this error occurred during a `before each` hook we are skipping the remaining tests in the current suite: `1 - Verifica se foi feito o...`",
+                "estack": "CypressError: `cy.visit()` failed trying to load:\n\nhttps://undefined-ft.herokuapp.com/.\n\nThe response we received from your web server was:\n\n  > 404: Not Found\n\nThis was considered a failure because the status code was not `2xx`.\n\nIf you do not want status codes to cause failures pass the option: `failOnStatusCode: false`\n\nBecause this error occurred during a `before each` hook we are skipping the remaining tests in the current suite: `1 - Verifica se foi feito o...`\n    at http://localhost:40051/__cypress/runner/cypress_runner.js:158062:25\n    at visitFailedByErr (http://localhost:40051/__cypress/runner/cypress_runner.js:157432:12)\n    at http://localhost:40051/__cypress/runner/cypress_runner.js:158042:13\n    at tryCatcher (http://localhost:40051/__cypress/runner/cypress_runner.js:10325:23)\n    at Promise._settlePromiseFromHandler (http://localhost:40051/__cypress/runner/cypress_runner.js:8260:31)\n    at Promise._settlePromise (http://localhost:40051/__cypress/runner/cypress_runner.js:8317:18)\n    at Promise._settlePromise0 (http://localhost:40051/__cypress/runner/cypress_runner.js:8362:10)\n    at Promise._settlePromises (http://localhost:40051/__cypress/runner/cypress_runner.js:8438:18)\n    at _drainQueueStep (http://localhost:40051/__cypress/runner/cypress_runner.js:5032:12)\n    at _drainQueue (http://localhost:40051/__cypress/runner/cypress_runner.js:5025:9)\n    at Async.../../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://localhost:40051/__cypress/runner/cypress_runner.js:5041:5)\n    at Async.drainQueues (http://localhost:40051/__cypress/runner/cypress_runner.js:4911:14)\nFrom Your Spec Code:\n    at Context.eval (http://localhost:40051/__cypress/tests?p=cypress/integration/herokuDeploy.spec.js:106:8)",
+                "diff": null
+              },
+              "uuid": "2245c975-ee5f-45a1-af9b-6ac9469b9a03",
+              "parentUUID": "cb85c5fc-4b75-4629-af76-b396e94ad16b",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Será validado que a pesquisa funciona como deveria",
+              "fullTitle": "1 - Verifica se foi feito o deploy do frontend no Heroku Será validado que a pesquisa funciona como deveria",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.contains(PESQUISAR).click();\ncy.contains(MARTIN).should(\"exist\");",
+              "err": {},
+              "uuid": "6e47b1f8-d063-483b-8006-e2e95b988d37",
+              "parentUUID": "cb85c5fc-4b75-4629-af76-b396e94ad16b",
+              "isHook": false,
+              "skipped": true
+            },
+            {
+              "title": "Será validado que o botão de mudar de realidade funciona.",
+              "fullTitle": "1 - Verifica se foi feito o deploy do frontend no Heroku Será validado que o botão de mudar de realidade funciona.",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.contains(\"Mudar de Realidade\").click();\ncy.contains(PESQUISAR).click();\ncy.contains(INVERTED_MARTIN).should(\"exist\");",
+              "err": {},
+              "uuid": "2d509d78-eb2c-447c-afc1-73540971c402",
+              "parentUUID": "cb85c5fc-4b75-4629-af76-b396e94ad16b",
+              "isHook": false,
+              "skipped": true
+            },
+            {
+              "title": "Será validado que os botões de próxima página e página anterior funcionam",
+              "fullTitle": "1 - Verifica se foi feito o deploy do frontend no Heroku Será validado que os botões de próxima página e página anterior funcionam",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.contains(PESQUISAR).click();\ncy.contains(MARTIN).should(\"exist\");\ncy.contains(\"Próximo\").click();\ncy.contains(\"2\").should(\"exist\");\ncy.contains(Claudia).should(\"exist\");\ncy.contains(\"Anterior\").click();\ncy.contains(\"1\").should(\"exist\");\ncy.contains(MARTIN).should(\"exist\");",
+              "err": {},
+              "uuid": "319c655e-038d-44ca-bcbf-fac7324f93f1",
+              "parentUUID": "cb85c5fc-4b75-4629-af76-b396e94ad16b",
+              "isHook": false,
+              "skipped": true
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "2245c975-ee5f-45a1-af9b-6ac9469b9a03"
+          ],
+          "pending": [],
+          "skipped": [
+            "6e47b1f8-d063-483b-8006-e2e95b988d37",
+            "2d509d78-eb2c-447c-afc1-73540971c402",
+            "319c655e-038d-44ca-bcbf-fac7324f93f1"
+          ],
+          "duration": 786,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false
+      },
+      "version": "4.1.0"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "4.1.0"
+    }
+  }
+}
