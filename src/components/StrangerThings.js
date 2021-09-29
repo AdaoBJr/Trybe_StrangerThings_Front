@@ -11,6 +11,7 @@ const {
   REACT_APP_HAWKINS_TIMEOUT,
   REACT_APP_UPSIDEDOWN_URL,
   REACT_APP_UPSIDEDOWN_TIMEOUT,
+  REACT_APP_DEV,
 } = process.env;
 
 const strangerThingsConfig = {
@@ -152,6 +153,7 @@ class StrangerThings extends React.Component {
             <button type="button" onClick={ this.nextPage }>Próximo</button>
           </div>
         </div>
+        {Boolean(REACT_APP_DEV) === true && <h1>Em desenvolvimento</h1>}
       </div>
     );
   }
