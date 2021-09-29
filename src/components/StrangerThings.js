@@ -13,7 +13,7 @@ const strangerThingsConfig = {
 };
 
 const upsideDownConfig = {
-  url: process.env.REACT_APP_HAWKINS_URL,
+  url: process.env.REACT_APP_UPSIDEDOWN_URL,
   // url: 'https://gdiccini-bd.herokuapp.com/',
   timeout: 30000,
 };
