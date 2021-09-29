@@ -8,7 +8,7 @@ const ambiente = process.env.REACT_APP_AMBIENTE || 'deu erro';
 function App() {
   return (
     <div className="App">
-      { `${ambiente}` }
+      { `<h2>${ambiente}</h2>` }
       <StrangerThings />
     </div>
   );
