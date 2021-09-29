@@ -109,6 +109,8 @@ class StrangerThings extends React.Component {
     const {
       hereIsTheUpsideDownWorld, characterName, characters, page,
     } = this.state;
+
+    const inDevelopmentEnv = process.env.DEVELOP.toLowerCase() === 'true';
     return (
       <div
         className={ `reality ${getRealityClass(
@@ -147,6 +149,8 @@ class StrangerThings extends React.Component {
             <button type="button" onClick={ this.nextPage }>Próximo</button>
           </div>
         </div>
+
+        {inDevelopmentEnv && <p>Em desenvolvimento</p>}
       </div>
     );
   }
