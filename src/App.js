@@ -6,7 +6,7 @@ import StrangerThings from './components/StrangerThings';
 function App() {
   return (
     <main>
-      <h1>Em desenvolvimento</h1>
+      {/* <h1>Em desenvolvimento</h1> */}
       <div className="App">
         <StrangerThings />
       </div>
