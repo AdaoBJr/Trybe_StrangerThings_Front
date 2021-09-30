@@ -15,7 +15,7 @@ const upsideDownConfig = {
   url: process.env.REACT_APP_UPSIDEDOWN_URL,
   timeout: process.env.REACT_APP_UPSIDEDOWN_TIMEOUT,
 };
-// corrige requisito 8
+// corrige requisito 8 - AGORA VAI!
 const charactersService = new CharactersService(strangerThingsConfig);
 const charactersUpsideDownService = new CharactersService(upsideDownConfig);
 
