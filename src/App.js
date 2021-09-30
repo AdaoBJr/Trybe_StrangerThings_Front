@@ -7,7 +7,7 @@ function App() {
   const status = process.env.REACT_APP_STATUS;
   return (
     <div className="App">
-      <h1>{status}</h1>
+      {status && <h1>{status}</h1>}
       <StrangerThings />
     </div>
   );
