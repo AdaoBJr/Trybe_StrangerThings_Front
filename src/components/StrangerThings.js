@@ -107,50 +107,50 @@ class StrangerThings extends React.Component {
     const {
       hereIsTheUpsideDownWorld, characterName, characters, page,
     } = this.state;
-    const { STATUS } = process.env;
+    const status = process.env.REACT_APP_STATUS;
+    console.log(status);
     return (
-      <div
-        className={ `reality ${getRealityClass(
-          hereIsTheUpsideDownWorld,
-        )}` }
-      >
-        <div>
-          <h3>{STATUS}</h3>
+      <>
+        <h3>{status}</h3>
+        <div
+          className={ `reality ${getRealityClass(
+            hereIsTheUpsideDownWorld,
+          )}` }
+        >
+          ,
+          <div className="content strangerfy">
+            <div className="change-reality">
+              <button type="button" onClick={ this.changeRealityClick }>
+                {' '}
+                Mudar de Realidade
+              </button>
+            </div>
+            <div>
+              <input
+                placeholder="Nome do Personagem"
+                onChange={ this.handleInput }
+                value={ characterName }
+              />
+              <button type="button" onClick={ this.searchClick }>Pesquisar</button>
+            </div>
+
+            <div>
+              <Table characters={ characters } />
+            </div>
+
+            <div>
+              <p>
+                Página atual:
+                {page}
+              </p>
+            </div>
+            <div>
+              <button type="button" onClick={ this.previousPage }>Anterior</button>
+              <button type="button" onClick={ this.nextPage }>Próximo</button>
+            </div>
+          </div>
         </div>
-
-        <div className="content strangerfy">
-          <div className="change-reality">
-            <button type="button" onClick={ this.changeRealityClick }>
-              {' '}
-              Mudar de Realidade
-            </button>
-          </div>
-
-          <div>
-            <input
-              placeholder="Nome do Personagem"
-              onChange={ this.handleInput }
-              value={ characterName }
-            />
-            <button type="button" onClick={ this.searchClick }>Pesquisar</button>
-          </div>
-
-          <div>
-            <Table characters={ characters } />
-          </div>
-
-          <div>
-            <p>
-              Página atual:
-              {page}
-            </p>
-          </div>
-          <div>
-            <button type="button" onClick={ this.previousPage }>Anterior</button>
-            <button type="button" onClick={ this.nextPage }>Próximo</button>
-          </div>
-        </div>
-      </div>
+      </>
     );
   }
 }
