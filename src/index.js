@@ -1,3 +1,4 @@
+// Iniciando o projeto stranger things Frontend
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
