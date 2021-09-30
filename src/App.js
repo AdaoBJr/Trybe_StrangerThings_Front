@@ -5,9 +5,12 @@ import StrangerThings from './components/StrangerThings';
 
 function App() {
   return (
-    <div className="App">
-      <StrangerThings />
-    </div>
+    <main>
+      <h1>Em desenvolvimento</h1>
+      <div className="App">
+        <StrangerThings />
+      </div>
+    </main>
   );
 }
 
