@@ -157,7 +157,6 @@ class StrangerThings extends React.Component {
         <div>
           {process.env.REACT_APP_DEVELOPMENT === 'true'
             ? <p>Em desenvolvimento</p> : false}
-
         </div>
       </div>
     );
