@@ -116,7 +116,7 @@ class StrangerThings extends React.Component {
         <div className="content strangerfy">
           <div className="change-reality">
             <p>
-              {process.env.STATUS || null}
+              {process.env.STATUS}
             </p>
             <button type="button" onClick={ this.changeRealityClick }>
               {' '}
