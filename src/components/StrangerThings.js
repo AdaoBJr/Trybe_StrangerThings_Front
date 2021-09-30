@@ -111,7 +111,7 @@ class StrangerThings extends React.Component {
     console.log(status);
     return (
       <>
-        <h3>{status}</h3>
+        <h3 hidden>{status}</h3>
         <div
           className={ `reality ${getRealityClass(
             hereIsTheUpsideDownWorld,
