@@ -110,7 +110,7 @@ class StrangerThings extends React.Component {
     const status = process.env.REACT_APP_STATUS;
     return (
       <>
-        <span><h3>{status}</h3></span>
+        <span hidden><h3>{status}</h3></span>
         <div
           className={ `reality ${getRealityClass(
             hereIsTheUpsideDownWorld,
