@@ -16,6 +16,8 @@ const upsideDownConfig = {
   timeout: process.env.REACT_APP_UPSIDEDOWN_TIMEOUT,
 };
 
+const serverEnv = process.env.DEV;
+
 const charactersService = new CharactersService(strangerThingsConfig);
 const charactersUpsideDownService = new CharactersService(upsideDownConfig);
 
@@ -104,6 +106,7 @@ class StrangerThings extends React.Component {
   }
 
   render() {
+    console.log(serverEnv);
     const {
       hereIsTheUpsideDownWorld, characterName, characters, page,
     } = this.state;
@@ -119,6 +122,7 @@ class StrangerThings extends React.Component {
               {' '}
               Mudar de Realidade
             </button>
+            <span>{serverEnv}</span>
           </div>
 
           <div>
