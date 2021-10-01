@@ -8,12 +8,12 @@ const getRealityClass = (hereIsTheUpsideDownWorld) => (
 
 const strangerThingsConfig = {
   url: process.env.REACT_APP_HAWKINS_URL,
-  timeout: REACT_APP_HAWKINS_TIMEOUT,
+  timeout: process.env.REACT_APP_HAWKINS_TIMEOUT,
 };
 
 const upsideDownConfig = {
   url: process.env.REACT_APP_HAWKINS_TIMEOUT,
-  timeout: REACT_APP_UPSIDEDOWN_TIMEOUT,
+  timeout: process.env.REACT_APP_UPSIDEDOWN_TIMEOUT,
 };
 
 const charactersService = new CharactersService(strangerThingsConfig);
@@ -107,47 +107,49 @@ class StrangerThings extends React.Component {
     const {
       hereIsTheUpsideDownWorld, characterName, characters, page,
     } = this.state;
-    const { development } = process.env.development;
+    const development = process.env.development;
     return (
-      <div
-        className={ `reality ${getRealityClass(
-          hereIsTheUpsideDownWorld,
-        )}` }
-      >
-        <span hidden><h2>{ development }</h2></span>
-        <div className="content strangerfy">
-          <div className="change-reality">
-            <button type="button" onClick={ this.changeRealityClick }>
-              {' '}
-              Mudar de Realidade
-            </button>
-          </div>
+      <>
+        <span>{ development }</span>
+        <div
+          className={ `reality ${getRealityClass(
+            hereIsTheUpsideDownWorld,
+          )}` }
+        >
+          <div className="content strangerfy">
+            <div className="change-reality">
+              <button type="button" onClick={ this.changeRealityClick }>
+                {' '}
+                Mudar de Realidade
+              </button>
+            </div>
 
-          <div>
-            <input
-              placeholder="Nome do Personagem"
-              onChange={ this.handleInput }
-              value={ characterName }
-            />
-            <button type="button" onClick={ this.searchClick }>Pesquisar</button>
-          </div>
+            <div>
+              <input
+                placeholder="Nome do Personagem"
+                onChange={ this.handleInput }
+                value={ characterName }
+              />
+              <button type="button" onClick={ this.searchClick }>Pesquisar</button>
+            </div>
 
-          <div>
-            <Table characters={ characters } />
-          </div>
+            <div>
+              <Table characters={ characters } />
+            </div>
 
-          <div>
-            <p>
-              Página atual:
-              {page}
-            </p>
-          </div>
-          <div>
-            <button type="button" onClick={ this.previousPage }>Anterior</button>
-            <button type="button" onClick={ this.nextPage }>Próximo</button>
+            <div>
+              <p>
+                Página atual:
+                {page}
+              </p>
+            </div>
+            <div>
+              <button type="button" onClick={ this.previousPage }>Anterior</button>
+              <button type="button" onClick={ this.nextPage }>Próximo</button>
+            </div>
           </div>
         </div>
-      </div>
+      </>
     );
   }
 }
