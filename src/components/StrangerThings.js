@@ -104,7 +104,7 @@ class StrangerThings extends React.Component {
   }
 
   render() {
-    const serverEnv = process.env.SERVER_ENV;
+    const serverEnv = process.env.UNDER_DEVELOPMENT === 'true';
 
     const {
       hereIsTheUpsideDownWorld, characterName, characters, page,
@@ -115,7 +115,9 @@ class StrangerThings extends React.Component {
           hereIsTheUpsideDownWorld,
         )}` }
       >
-        <span>{serverEnv}</span>
+        <span>
+          {serverEnv ? 'Em desenvolvimento' : '' }
+        </span>
         <div className="content strangerfy">
           <div className="change-reality">
             <button type="button" onClick={ this.changeRealityClick }>
