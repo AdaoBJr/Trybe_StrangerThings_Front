@@ -104,6 +104,8 @@ class StrangerThings extends React.Component {
   }
 
   render() {
+    const serverEnv = process.env.SERVER_ENV;
+
     const {
       hereIsTheUpsideDownWorld, characterName, characters, page,
     } = this.state;
@@ -113,6 +115,7 @@ class StrangerThings extends React.Component {
           hereIsTheUpsideDownWorld,
         )}` }
       >
+        <span>{serverEnv}</span>
         <div className="content strangerfy">
           <div className="change-reality">
             <button type="button" onClick={ this.changeRealityClick }>
