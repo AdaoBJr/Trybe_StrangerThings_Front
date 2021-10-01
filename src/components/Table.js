@@ -26,7 +26,6 @@ class Table extends React.Component {
     );
   }
 }
-
 Table.propTypes = {
   characters: PropTypes.arrayOf(
     PropTypes.shape({
