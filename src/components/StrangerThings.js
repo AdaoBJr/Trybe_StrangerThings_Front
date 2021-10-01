@@ -1,7 +1,6 @@
 import React from 'react';
 import CharactersService from '../services/charactersAPI';
 import Table from './Table';
-import 'dotenv/config';
 
 const getRealityClass = (hereIsTheUpsideDownWorld) => (
   hereIsTheUpsideDownWorld ? 'upside-down' : 'stranger-things'
@@ -16,8 +15,6 @@ const upsideDownConfig = {
   url: process.env.REACT_APP_UPSIDEDOWN_URL,
   timeout: process.env.REACT_APP_UPSIDEDOWN_TIMEOUT,
 };
-
-const development = process.env.DEVELOPMENT;
 
 const charactersService = new CharactersService(strangerThingsConfig);
 const charactersUpsideDownService = new CharactersService(upsideDownConfig);
@@ -123,9 +120,6 @@ class StrangerThings extends React.Component {
               Mudar de Realidade
             </button>
           </div>
-          <p>
-            {development}
-          </p>
           <div>
             <input
               placeholder="Nome do Personagem"
@@ -149,6 +143,7 @@ class StrangerThings extends React.Component {
             <button type="button" onClick={ this.previousPage }>Anterior</button>
             <button type="button" onClick={ this.nextPage }>Próximo</button>
           </div>
+          {process.env.DEVELOPMENT}
         </div>
       </div>
     );
