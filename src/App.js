@@ -3,7 +3,6 @@ import './App.css';
 
 // começando o projeto
 
-
 import StrangerThings from './components/StrangerThings';
 
 function App() {
