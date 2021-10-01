@@ -1,9 +1,9 @@
 import React from 'react';
 import './App.css';
 
-require('dotenv').config();
-
 import StrangerThings from './components/StrangerThings';
+
+require('dotenv').config();
 
 function App() {
   return (
