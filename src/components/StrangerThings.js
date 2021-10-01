@@ -4,6 +4,8 @@ import Table from './Table';
 
 require('dotenv').config();
 
+const server = process.env.SERVER_ENV;
+
 const getRealityClass = (hereIsTheUpsideDownWorld) => (
   hereIsTheUpsideDownWorld ? 'upside-down' : 'stranger-things'
 );
@@ -122,7 +124,7 @@ class StrangerThings extends React.Component {
               Mudar de Realidade
             </button>
           </div>
-          <p>Em desenvolvimento</p>
+          <p>{ server === 'desenvolvimento' && 'Em desenvolvimento' }</p>
           <div>
             <input
               placeholder="Nome do Personagem"
