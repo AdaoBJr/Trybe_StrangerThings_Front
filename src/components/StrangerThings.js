@@ -151,3 +151,5 @@ class StrangerThings extends React.Component {
 }
 
 export default StrangerThings;
+
+// Apenas pra subir
