@@ -143,7 +143,7 @@ class StrangerThings extends React.Component {
             </p>
           </div>
           <div>
-            { process.env.REACT_APP_DEVELOPMENT }
+            {/* { process.env.REACT_APP_DEVELOPMENT } */}
             { (process.env.REACT_APP_DEVELOPMENT === 'TRUE') ?  <p> Em desenvolvimento </p> : null}
           </div>          
           <div>
