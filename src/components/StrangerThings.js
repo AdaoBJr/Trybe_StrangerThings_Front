@@ -4,6 +4,8 @@ import Table from './Table';
 
 require('dotenv').config();
 
+const { REACT_APP_DEVELOPMENT } = process.env;
+
 const getRealityClass = (hereIsTheUpsideDownWorld) => (
   hereIsTheUpsideDownWorld ? 'upside-down' : 'stranger-things'
 );
@@ -143,9 +145,10 @@ class StrangerThings extends React.Component {
             </p>
           </div>
           <div>
-            { console.log(process.env.REACT_APP_DEVELOPMENT) }
-            { (process.env.REACT_APP_DEVELOPMENT === 'TRUE') ?  <p> Em desenvolvimento </p> : null}
-          </div>          
+            {
+              (REACT_APP_DEVELOPMENT === 'TRUE') ? <p> Em desenvolvimento </p> : null
+            }
+          </div>
           <div>
             <button type="button" onClick={ this.previousPage }>Anterior</button>
             <button type="button" onClick={ this.nextPage }>Próximo</button>
