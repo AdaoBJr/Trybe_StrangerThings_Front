@@ -2,6 +2,8 @@ import React from 'react';
 import CharactersService from '../services/charactersAPI';
 import Table from './Table';
 
+require('dotenv').config();
+
 const getRealityClass = (hereIsTheUpsideDownWorld) => (
   hereIsTheUpsideDownWorld ? 'upside-down' : 'stranger-things'
 );
@@ -107,10 +109,10 @@ class StrangerThings extends React.Component {
     const {
       hereIsTheUpsideDownWorld, characterName, characters, page,
     } = this.state;
-    const { development } = process.env.development;
+    // const { development } = process.env.development;
     return (
       <>
-        <span>{ development }</span>
+        {/* <span>{ development }</span> */}
         <div
           className={ `reality ${getRealityClass(
             hereIsTheUpsideDownWorld,
