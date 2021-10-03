@@ -1,6 +1,7 @@
 import React from 'react';
 import CharactersService from '../services/charactersAPI';
 import Table from './Table';
+import Modal from './Modal/Modal';
 
 const getRealityClass = (hereIsTheUpsideDownWorld) => (
   hereIsTheUpsideDownWorld ? 'upside-down' : 'stranger-things'
@@ -28,6 +29,7 @@ class StrangerThings extends React.Component {
       characterName: '',
       characters: [],
       page: 1,
+      isModalVisible: true,
     };
 
     this.handleInput = this.handleInput.bind(this);
@@ -38,6 +40,24 @@ class StrangerThings extends React.Component {
 
     this.nextPage = this.nextPage.bind(this);
     this.previousPage = this.previousPage.bind(this);
+
+    this.developmentMode = this.developmentMode.bind(this);
+    this.enableModal = this.enableModal.bind(this);
+    this.callModal = this.callModal.bind(this);
+  }
+
+  // componentDidMount() {
+  //   const limitTime = 10000;
+
+  //   setTimeout(
+  //     () => this.enableModal(),
+  //     limitTime,
+  //   );
+  // }
+
+  enableModal() {
+    const { isModalVisible } = this.state;
+    this.setState({ isModalVisible: !isModalVisible });
   }
 
   handleInput(event) {
@@ -103,51 +123,69 @@ class StrangerThings extends React.Component {
     );
   }
 
-  render() {
-    const serverEnv = process.env.UNDER_DEVELOPMENT === 'true';
+  developmentMode() {
+    const serverEnv = process.env.REACT_APP_DEVELOPMENT === 'true';
 
+    return (
+      <div className={ serverEnv ? 'react-status-active' : 'react-status-inactive' }>
+        <span>
+          Em desenvolvimento
+        </span>
+      </div>
+    );
+  }
+
+  callModal() {
+    return (
+      <Modal onClose={ this.enableModal }>
+        <p>Você está no ambiente de desenvolvimento</p>
+      </Modal>
+    );
+  }
+
+  render() {
     const {
-      hereIsTheUpsideDownWorld, characterName, characters, page,
+      hereIsTheUpsideDownWorld, characterName, characters, page, isModalVisible,
     } = this.state;
     return (
-      <div
-        className={ `reality ${getRealityClass(
-          hereIsTheUpsideDownWorld,
-        )}` }
-      >
-        <span>
-          {serverEnv ? 'Em desenvolvimento' : '' }
-        </span>
-        <div className="content strangerfy">
-          <div className="change-reality">
-            <button type="button" onClick={ this.changeRealityClick }>
-              {' '}
-              Mudar de Realidade
-            </button>
-          </div>
+      <div className="container-app">
+        {isModalVisible ? this.callModal() : this.developmentMode()}
+        <div
+          className={ `reality ${getRealityClass(
+            hereIsTheUpsideDownWorld,
+          )}` }
+        >
+          <div className="content strangerfy">
+            <div className="change-reality">
+              <button type="button" onClick={ this.changeRealityClick }>
+                {' '}
+                Mudar de Realidade
+              </button>
+            </div>
 
-          <div>
-            <input
-              placeholder="Nome do Personagem"
-              onChange={ this.handleInput }
-              value={ characterName }
-            />
-            <button type="button" onClick={ this.searchClick }>Pesquisar</button>
-          </div>
+            <div>
+              <input
+                placeholder="Nome do Personagem"
+                onChange={ this.handleInput }
+                value={ characterName }
+              />
+              <button type="button" onClick={ this.searchClick }>Pesquisar</button>
+            </div>
 
-          <div>
-            <Table characters={ characters } />
-          </div>
+            <div>
+              <Table characters={ characters } />
+            </div>
 
-          <div>
-            <p>
-              Página atual:
-              {page}
-            </p>
-          </div>
-          <div>
-            <button type="button" onClick={ this.previousPage }>Anterior</button>
-            <button type="button" onClick={ this.nextPage }>Próximo</button>
+            <div>
+              <p>
+                Página atual:
+                {page}
+              </p>
+            </div>
+            <div>
+              <button type="button" onClick={ this.previousPage }>Anterior</button>
+              <button type="button" onClick={ this.nextPage }>Próximo</button>
+            </div>
           </div>
         </div>
       </div>

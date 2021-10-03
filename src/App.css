@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+
+body {
+  overflow: hidden;
+}
+
 .App {
   text-align: center;
 }
@@ -57,38 +63,43 @@
 .stranger-things {
   background-image: url('./assets/stranger-things.jpg');
   background-position: left;
+  display: flex;
 }
 
 .upside-down {
   background-image: url('./assets/upside-down.jpg');
   background-position: right;
+  display: flex;
 }
 
 .change-reality {
-  margin-bottom: 8%;
+  margin-bottom: 2%;
 }
 
 .content {
-  margin-top: 5%;
+  margin-top: 2%;
 }
 
 .strangerfy > div > * {
-  font-family: 'BenguiatITCW01-BoldCn';
+  /* font-family: 'BenguiatITCW01-BoldCn';
   src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/161676/BenguiatProITC-BoldCond.eot')
       format('embedded-opentype'),
     url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/161676/BenguiatProITC-BoldCond.woff')
       format('woff'),
     url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/161676/BenguiatProITC-BoldCond.ttf')
-      format('truetype');
+      format('truetype'); */
+  font-family: 'Special Elite', monospace;
+
   font-style: normal;
   font-weight: bold;
 
-  color: #c11b1f;
+  color: #91261c;
   background: rgba(211, 211, 211, 0.637);
 
   font-size: x-large;
 
   margin: 10px;
+  padding: 5px;
 }
 
 .strangerfy > div > input {
@@ -98,4 +109,42 @@
 .strangerfy > div > table {
   width: 900px;
   text-align: left;
+}
+
+.container-app {
+  height: 100%;
+  position: relative;
+}
+
+.react-status-inactive {
+  display: none;
+}
+
+.react-status-active {
+  animation: show_slide 1s ease forwards;
+  background: #ffdb9b;
+  border-left: 8px solid #ffa502;
+  border-right: 8px solid #ffa502;
+  border-radius: 4px;
+  color: #ce8500;
+  font-size: inherit;
+  padding: 1.25rem 2.5rem;
+  position: absolute;
+  right: 1%;
+  top: 2%;
+}
+
+@keyframes show_slide {
+  0% {
+    transform: translateX(100%);
+  }
+  40% {
+    transform: translateX(-10%);
+  }
+  80% {
+    transform: translateX(0%);
+  }
+  40% {
+    transform: translateX(-10%);
+  }
 }
