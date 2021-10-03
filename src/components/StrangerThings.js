@@ -46,14 +46,14 @@ class StrangerThings extends React.Component {
     this.callModal = this.callModal.bind(this);
   }
 
-  // componentDidMount() {
-  //   const limitTime = 10000;
+  componentDidMount() {
+    const limitTime = 5000;
 
-  //   setTimeout(
-  //     () => this.enableModal(),
-  //     limitTime,
-  //   );
-  // }
+    setTimeout(
+      () => this.enableModal(),
+      limitTime,
+    );
+  }
 
   enableModal() {
     const { isModalVisible } = this.state;

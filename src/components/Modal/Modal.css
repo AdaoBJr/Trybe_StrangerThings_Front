@@ -15,7 +15,7 @@
 .content-modal {
   align-items: center;
   animation: cursor 500ms steps(40) infinite normal,
-    typing 4s steps(40) 1s normal both;
+    typing 2s steps(40) 1s normal both;
   border-right: 2px solid rgba(24, 46, 67, 0.75);
   font-size: 1.2rem;
   display: flex;
