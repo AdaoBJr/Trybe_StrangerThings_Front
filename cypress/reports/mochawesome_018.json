@@ -1,0 +1,129 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 1,
+    "pending": 0,
+    "failures": 1,
+    "start": "2021-10-04T21:41:45.630Z",
+    "end": "2021-10-04T21:42:05.236Z",
+    "duration": 19606,
+    "testsRegistered": 2,
+    "passPercent": 50,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "d2f8649d-94e4-466d-9f5f-a50326dd7374",
+      "title": "",
+      "fullFile": "cypress/integration/developerMode.spec.js",
+      "file": "cypress/integration/developerMode.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "a8d57304-4449-4725-942b-7517e726d7d4",
+          "title": "3 - Verifica os multi-ambientes e modo de desenvolvimento",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Será validado que a tag de desenvolvimento foi encontrada no frontend de desenvolvimento",
+              "fullTitle": "3 - Verifica os multi-ambientes e modo de desenvolvimento Será validado que a tag de desenvolvimento foi encontrada no frontend de desenvolvimento",
+              "timedOut": null,
+              "duration": 12571,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(FRONT_URL);\ncy.contains(\"Em desenvolvimento\").should(\"exist\");",
+              "err": {
+                "message": "AssertionError: Timed out retrying: Expected to find content: 'Em desenvolvimento' but never did.",
+                "estack": "AssertionError: Timed out retrying: Expected to find content: 'Em desenvolvimento' but never did.\n    at Context.eval (https://marianasavoldi-ft.herokuapp.com/__cypress/tests?p=cypress/integration/developerMode.spec.js:104:39)",
+                "diff": null
+              },
+              "uuid": "9bcb1a4c-a14a-4a55-82c3-ba35727c3e34",
+              "parentUUID": "a8d57304-4449-4725-942b-7517e726d7d4",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Será validado que a tag de desenvolvimento não existe no frontend de produção",
+              "fullTitle": "3 - Verifica os multi-ambientes e modo de desenvolvimento Será validado que a tag de desenvolvimento não existe no frontend de produção",
+              "timedOut": null,
+              "duration": 2476,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(FRONT_URL_PROD);\ncy.contains(\"Em desenvolvimento\").should(\"not.exist\");",
+              "err": {},
+              "uuid": "2f25e3ab-47ef-4615-9a27-8772dfd39dc9",
+              "parentUUID": "a8d57304-4449-4725-942b-7517e726d7d4",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "2f25e3ab-47ef-4615-9a27-8772dfd39dc9"
+          ],
+          "failures": [
+            "9bcb1a4c-a14a-4a55-82c3-ba35727c3e34"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 15047,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false
+      },
+      "version": "4.1.0"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "4.1.0"
+    }
+  }
+}
