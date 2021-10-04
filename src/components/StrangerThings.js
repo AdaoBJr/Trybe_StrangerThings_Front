@@ -8,6 +8,8 @@ const getRealityClass = (hereIsTheUpsideDownWorld) => (
   hereIsTheUpsideDownWorld ? 'upside-down' : 'stranger-things'
 );
 
+const status = process.env.development;
+
 const strangerThingsConfig = {
   url: process.env.REACT_APP_HAWKINS_URL,
   timeout: process.env.REACT_APP_HAWKINS_TIMEOUT,
@@ -111,47 +113,45 @@ class StrangerThings extends React.Component {
     } = this.state;
     // const { development } = process.env.development;
     return (
-      <>
-        {/* <span>{ development }</span> */}
-        <div
-          className={ `reality ${getRealityClass(
-            hereIsTheUpsideDownWorld,
-          )}` }
-        >
-          <div className="content strangerfy">
-            <div className="change-reality">
-              <button type="button" onClick={ this.changeRealityClick }>
-                {' '}
-                Mudar de Realidade
-              </button>
-            </div>
+      <div
+        className={ `reality ${getRealityClass(
+          hereIsTheUpsideDownWorld,
+        )}` }
+      >
+        <div hidden><h2>{status}</h2></div>
+        <div className="content strangerfy">
+          <div className="change-reality">
+            <button type="button" onClick={ this.changeRealityClick }>
+              {' '}
+              Mudar de Realidade
+            </button>
+          </div>
 
-            <div>
-              <input
-                placeholder="Nome do Personagem"
-                onChange={ this.handleInput }
-                value={ characterName }
-              />
-              <button type="button" onClick={ this.searchClick }>Pesquisar</button>
-            </div>
+          <div>
+            <input
+              placeholder="Nome do Personagem"
+              onChange={ this.handleInput }
+              value={ characterName }
+            />
+            <button type="button" onClick={ this.searchClick }>Pesquisar</button>
+          </div>
 
-            <div>
-              <Table characters={ characters } />
-            </div>
+          <div>
+            <Table characters={ characters } />
+          </div>
 
-            <div>
-              <p>
-                Página atual:
-                {page}
-              </p>
-            </div>
-            <div>
-              <button type="button" onClick={ this.previousPage }>Anterior</button>
-              <button type="button" onClick={ this.nextPage }>Próximo</button>
-            </div>
+          <div>
+            <p>
+              Página atual:
+              {page}
+            </p>
+          </div>
+          <div>
+            <button type="button" onClick={ this.previousPage }>Anterior</button>
+            <button type="button" onClick={ this.nextPage }>Próximo</button>
           </div>
         </div>
-      </>
+      </div>
     );
   }
 }
