@@ -25,7 +25,6 @@ const upsideDownConfig = {
 };
 
 const charactersService = new CharactersService(strangerThingsConfig);
-console.log('==========================', charactersService);
 const charactersUpsideDownService = new CharactersService(upsideDownConfig);
 
 class StrangerThings extends React.Component {
@@ -129,7 +128,7 @@ class StrangerThings extends React.Component {
               Mudar de Realidade
             </button>
           </div>
-
+          <p>Em desenvolvimento</p>
           <div>
             <input
               placeholder="Nome do Personagem"
