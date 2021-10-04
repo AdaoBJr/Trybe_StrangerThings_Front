@@ -4,6 +4,10 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
+/*
+  Este projeto fiz com o auxílio de Antenor Zapata e Lucas Martins. Ambos da turma 10B
+*/
+
 ReactDOM.render(
   <React.StrictMode>
     <App />
