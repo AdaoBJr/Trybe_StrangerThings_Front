@@ -9,12 +9,12 @@ const getRealityClass = (hereIsTheUpsideDownWorld) => (
 );
 
 const strangerThingsConfig = {
-  url: process.env.REACT_APP_HAWKINS_URL || 'https://fernandaporto-bk.herokuapp.com/',
+  url: process.env.REACT_APP_HAWKINS_URL,
   timeout: process.env.REACT_APP_HAWKINS_TIMEOUT,
 };
 
 const upsideDownConfig = {
-  url: process.env.REACT_APP_UPSIDEDOWN_URL || 'https://fernandaporto-bd.herokuapp.com/',
+  url: process.env.REACT_APP_UPSIDEDOWN_URL,
   timeout: process.env.REACT_APP_UPSIDEDOWN_TIMEOUT,
 };
 
