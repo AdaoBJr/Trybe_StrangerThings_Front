@@ -1,14 +1,11 @@
+
 import React from 'react';
 import CharactersService from '../services/charactersAPI';
 import Table from './Table';
 
-require('dotenv').config();
-
 const getRealityClass = (hereIsTheUpsideDownWorld) => (
   hereIsTheUpsideDownWorld ? 'upside-down' : 'stranger-things'
 );
-
-const status = process.env.development;
 
 const strangerThingsConfig = {
   url: process.env.REACT_APP_HAWKINS_URL,
@@ -111,14 +108,12 @@ class StrangerThings extends React.Component {
     const {
       hereIsTheUpsideDownWorld, characterName, characters, page,
     } = this.state;
-    // const { development } = process.env.development;
     return (
       <div
         className={ `reality ${getRealityClass(
           hereIsTheUpsideDownWorld,
         )}` }
       >
-        <div hidden><h2>{status}</h2></div>
         <div className="content strangerfy">
           <div className="change-reality">
             <button type="button" onClick={ this.changeRealityClick }>
