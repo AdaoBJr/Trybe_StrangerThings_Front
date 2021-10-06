@@ -1,7 +1,7 @@
 import React from 'react';
 import CharactersService from '../services/charactersAPI';
 import Table from './Table';
-
+// esqueci de mudar a banch, por isso esse comentario, para poder subir o projeto
 const getRealityClass = (hereIsTheUpsideDownWorld) => (
   hereIsTheUpsideDownWorld ? 'upside-down' : 'stranger-things'
 );
