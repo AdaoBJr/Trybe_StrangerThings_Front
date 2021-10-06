@@ -5,15 +5,9 @@
     "passes": 0,
     "pending": 0,
     "failures": 2,
-<<<<<<< HEAD
-    "start": "2021-10-06T10:07:37.537Z",
-    "end": "2021-10-06T10:07:37.667Z",
-    "duration": 130,
-=======
-    "start": "2021-10-02T00:10:05.062Z",
-    "end": "2021-10-02T00:10:05.121Z",
-    "duration": 59,
->>>>>>> 559911080fdafeca3007288fad516b0b60ac0118
+    "start": "2021-10-05T08:46:30.853Z",
+    "end": "2021-10-05T08:46:30.928Z",
+    "duration": 75,
     "testsRegistered": 2,
     "passPercent": 0,
     "pendingPercent": 0,
@@ -24,11 +18,7 @@
   },
   "results": [
     {
-<<<<<<< HEAD
-      "uuid": "5eafe713-de17-452b-8985-a7a2aa98174a",
-=======
-      "uuid": "4bd1ded9-0cfd-4f4f-a58d-37c38da505a1",
->>>>>>> 559911080fdafeca3007288fad516b0b60ac0118
+      "uuid": "7b97ba40-ef5f-4cd4-a891-c5054dd9b264",
       "title": "",
       "fullFile": "cypress/integration/VerifyEnv.spec.js",
       "file": "cypress/integration/VerifyEnv.spec.js",
@@ -37,11 +27,7 @@
       "tests": [],
       "suites": [
         {
-<<<<<<< HEAD
-          "uuid": "62519f17-5fdf-419c-97ad-0419212d2e5d",
-=======
-          "uuid": "dbd1adff-e3e1-4670-9a6d-1cab3e6eeb7a",
->>>>>>> 559911080fdafeca3007288fad516b0b60ac0118
+          "uuid": "bb2fbbaf-4324-4a7c-bae0-df46db73c841",
           "title": "2 - Verifica as variáveis de ambiente do frontend",
           "fullFile": "",
           "file": "",
@@ -52,11 +38,7 @@
               "title": "Será validado se as variáveis do hawkins existem",
               "fullTitle": "2 - Verifica as variáveis de ambiente do frontend Será validado se as variáveis do hawkins existem",
               "timedOut": null,
-<<<<<<< HEAD
-              "duration": 53,
-=======
-              "duration": 30,
->>>>>>> 559911080fdafeca3007288fad516b0b60ac0118
+              "duration": 37,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -66,19 +48,11 @@
               "code": "expect(Cypress.env(REACT_APP_HAWKINS_URL)).to.exist;\nexpect(Cypress.env(REACT_APP_HAWKINS_TIMEOUT)).to.exist;",
               "err": {
                 "message": "AssertionError: expected undefined to exist",
-<<<<<<< HEAD
-                "estack": "AssertionError: expected undefined to exist\n    at Context.eval (http://localhost:44085/__cypress/tests?p=cypress/integration/VerifyEnv.spec.js:105:50)",
+                "estack": "AssertionError: expected undefined to exist\n    at Context.eval (http://localhost:43467/__cypress/tests?p=cypress/integration/VerifyEnv.spec.js:105:50)",
                 "diff": null
               },
-              "uuid": "9f4f3288-c385-4d63-b8d2-8db714bf8d7d",
-              "parentUUID": "62519f17-5fdf-419c-97ad-0419212d2e5d",
-=======
-                "estack": "AssertionError: expected undefined to exist\n    at Context.eval (http://localhost:45997/__cypress/tests?p=cypress/integration/VerifyEnv.spec.js:105:50)",
-                "diff": null
-              },
-              "uuid": "5846929d-bdca-468b-beb1-89f78fb005dd",
-              "parentUUID": "dbd1adff-e3e1-4670-9a6d-1cab3e6eeb7a",
->>>>>>> 559911080fdafeca3007288fad516b0b60ac0118
+              "uuid": "98e433b3-fc75-42ec-baed-c150fa05d385",
+              "parentUUID": "bb2fbbaf-4324-4a7c-bae0-df46db73c841",
               "isHook": false,
               "skipped": false
             },
@@ -86,11 +60,7 @@
               "title": "Será validado se as variáveis do upsidesown existem",
               "fullTitle": "2 - Verifica as variáveis de ambiente do frontend Será validado se as variáveis do upsidesown existem",
               "timedOut": null,
-<<<<<<< HEAD
-              "duration": 29,
-=======
-              "duration": 11,
->>>>>>> 559911080fdafeca3007288fad516b0b60ac0118
+              "duration": 16,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -100,19 +70,11 @@
               "code": "expect(Cypress.env(REACT_APP_UPSIDEDOWN_URL)).to.exist;\nexpect(Cypress.env(REACT_APP_UPSIDEDOWN_TIMEOUT)).to.exist;",
               "err": {
                 "message": "AssertionError: expected undefined to exist",
-<<<<<<< HEAD
-                "estack": "AssertionError: expected undefined to exist\n    at Context.eval (http://localhost:44085/__cypress/tests?p=cypress/integration/VerifyEnv.spec.js:109:53)",
+                "estack": "AssertionError: expected undefined to exist\n    at Context.eval (http://localhost:43467/__cypress/tests?p=cypress/integration/VerifyEnv.spec.js:109:53)",
                 "diff": null
               },
-              "uuid": "c52a4fc0-a3c9-4322-9651-afb72251efbf",
-              "parentUUID": "62519f17-5fdf-419c-97ad-0419212d2e5d",
-=======
-                "estack": "AssertionError: expected undefined to exist\n    at Context.eval (http://localhost:45997/__cypress/tests?p=cypress/integration/VerifyEnv.spec.js:109:53)",
-                "diff": null
-              },
-              "uuid": "e8b8b98e-6bea-4e57-bb4d-7db2d6942c6f",
-              "parentUUID": "dbd1adff-e3e1-4670-9a6d-1cab3e6eeb7a",
->>>>>>> 559911080fdafeca3007288fad516b0b60ac0118
+              "uuid": "edb6fd3d-b252-4e7d-88fb-8a919a3528bf",
+              "parentUUID": "bb2fbbaf-4324-4a7c-bae0-df46db73c841",
               "isHook": false,
               "skipped": false
             }
@@ -120,21 +82,12 @@
           "suites": [],
           "passes": [],
           "failures": [
-<<<<<<< HEAD
-            "9f4f3288-c385-4d63-b8d2-8db714bf8d7d",
-            "c52a4fc0-a3c9-4322-9651-afb72251efbf"
+            "98e433b3-fc75-42ec-baed-c150fa05d385",
+            "edb6fd3d-b252-4e7d-88fb-8a919a3528bf"
           ],
           "pending": [],
           "skipped": [],
-          "duration": 82,
-=======
-            "5846929d-bdca-468b-beb1-89f78fb005dd",
-            "e8b8b98e-6bea-4e57-bb4d-7db2d6942c6f"
-          ],
-          "pending": [],
-          "skipped": [],
-          "duration": 41,
->>>>>>> 559911080fdafeca3007288fad516b0b60ac0118
+          "duration": 53,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

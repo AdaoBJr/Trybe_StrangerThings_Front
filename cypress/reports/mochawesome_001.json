@@ -5,9 +5,15 @@
     "passes": 0,
     "pending": 0,
     "failures": 1,
+<<<<<<< HEAD
     "start": "2021-10-06T10:07:33.164Z",
     "end": "2021-10-06T10:07:34.280Z",
     "duration": 1116,
+=======
+    "start": "2021-10-02T00:10:03.104Z",
+    "end": "2021-10-02T00:10:03.727Z",
+    "duration": 623,
+>>>>>>> 559911080fdafeca3007288fad516b0b60ac0118
     "testsRegistered": 4,
     "passPercent": 0,
     "pendingPercent": 0,
@@ -18,7 +24,11 @@
   },
   "results": [
     {
+<<<<<<< HEAD
       "uuid": "9d8373cc-0093-4e59-b03c-666538e42a44",
+=======
+      "uuid": "1502aeb3-32cd-4898-83c8-799407d36270",
+>>>>>>> 559911080fdafeca3007288fad516b0b60ac0118
       "title": "",
       "fullFile": "cypress/integration/herokuDeploy.spec.js",
       "file": "cypress/integration/herokuDeploy.spec.js",
@@ -27,7 +37,11 @@
       "tests": [],
       "suites": [
         {
+<<<<<<< HEAD
           "uuid": "6547e7c0-d2b7-45ea-a048-cd9262f0a970",
+=======
+          "uuid": "b3eabb93-193e-43da-ba8a-7179fdf1ef72",
+>>>>>>> 559911080fdafeca3007288fad516b0b60ac0118
           "title": "1 - Verifica se foi feito o deploy do frontend no Heroku",
           "fullFile": "",
           "file": "",
@@ -38,7 +52,11 @@
               "title": "Será validado que o botão de mudar de realidade existe",
               "fullTitle": "1 - Verifica se foi feito o deploy do frontend no Heroku Será validado que o botão de mudar de realidade existe",
               "timedOut": null,
+<<<<<<< HEAD
               "duration": 929,
+=======
+              "duration": 597,
+>>>>>>> 559911080fdafeca3007288fad516b0b60ac0118
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -48,11 +66,19 @@
               "code": "cy.get(\".change-reality\").should(\"exist\");",
               "err": {
                 "message": "CypressError: `cy.visit()` failed trying to load:\n\nhttps://undefined-ft.herokuapp.com/.\n\nThe response we received from your web server was:\n\n  > 404: Not Found\n\nThis was considered a failure because the status code was not `2xx`.\n\nIf you do not want status codes to cause failures pass the option: `failOnStatusCode: false`\n\nBecause this error occurred during a `before each` hook we are skipping the remaining tests in the current suite: `1 - Verifica se foi feito o...`",
+<<<<<<< HEAD
                 "estack": "CypressError: `cy.visit()` failed trying to load:\n\nhttps://undefined-ft.herokuapp.com/.\n\nThe response we received from your web server was:\n\n  > 404: Not Found\n\nThis was considered a failure because the status code was not `2xx`.\n\nIf you do not want status codes to cause failures pass the option: `failOnStatusCode: false`\n\nBecause this error occurred during a `before each` hook we are skipping the remaining tests in the current suite: `1 - Verifica se foi feito o...`\n    at http://localhost:44085/__cypress/runner/cypress_runner.js:158062:25\n    at visitFailedByErr (http://localhost:44085/__cypress/runner/cypress_runner.js:157432:12)\n    at http://localhost:44085/__cypress/runner/cypress_runner.js:158042:13\n    at tryCatcher (http://localhost:44085/__cypress/runner/cypress_runner.js:10325:23)\n    at Promise._settlePromiseFromHandler (http://localhost:44085/__cypress/runner/cypress_runner.js:8260:31)\n    at Promise._settlePromise (http://localhost:44085/__cypress/runner/cypress_runner.js:8317:18)\n    at Promise._settlePromise0 (http://localhost:44085/__cypress/runner/cypress_runner.js:8362:10)\n    at Promise._settlePromises (http://localhost:44085/__cypress/runner/cypress_runner.js:8438:18)\n    at _drainQueueStep (http://localhost:44085/__cypress/runner/cypress_runner.js:5032:12)\n    at _drainQueue (http://localhost:44085/__cypress/runner/cypress_runner.js:5025:9)\n    at Async.../../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://localhost:44085/__cypress/runner/cypress_runner.js:5041:5)\n    at Async.drainQueues (http://localhost:44085/__cypress/runner/cypress_runner.js:4911:14)\nFrom Your Spec Code:\n    at Context.eval (http://localhost:44085/__cypress/tests?p=cypress/integration/herokuDeploy.spec.js:106:8)",
                 "diff": null
               },
               "uuid": "2d8efc4e-1f6c-484f-b695-ac6c275b7074",
               "parentUUID": "6547e7c0-d2b7-45ea-a048-cd9262f0a970",
+=======
+                "estack": "CypressError: `cy.visit()` failed trying to load:\n\nhttps://undefined-ft.herokuapp.com/.\n\nThe response we received from your web server was:\n\n  > 404: Not Found\n\nThis was considered a failure because the status code was not `2xx`.\n\nIf you do not want status codes to cause failures pass the option: `failOnStatusCode: false`\n\nBecause this error occurred during a `before each` hook we are skipping the remaining tests in the current suite: `1 - Verifica se foi feito o...`\n    at http://localhost:45997/__cypress/runner/cypress_runner.js:158062:25\n    at visitFailedByErr (http://localhost:45997/__cypress/runner/cypress_runner.js:157432:12)\n    at http://localhost:45997/__cypress/runner/cypress_runner.js:158042:13\n    at tryCatcher (http://localhost:45997/__cypress/runner/cypress_runner.js:10325:23)\n    at Promise._settlePromiseFromHandler (http://localhost:45997/__cypress/runner/cypress_runner.js:8260:31)\n    at Promise._settlePromise (http://localhost:45997/__cypress/runner/cypress_runner.js:8317:18)\n    at Promise._settlePromise0 (http://localhost:45997/__cypress/runner/cypress_runner.js:8362:10)\n    at Promise._settlePromises (http://localhost:45997/__cypress/runner/cypress_runner.js:8438:18)\n    at _drainQueueStep (http://localhost:45997/__cypress/runner/cypress_runner.js:5032:12)\n    at _drainQueue (http://localhost:45997/__cypress/runner/cypress_runner.js:5025:9)\n    at Async.../../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://localhost:45997/__cypress/runner/cypress_runner.js:5041:5)\n    at Async.drainQueues (http://localhost:45997/__cypress/runner/cypress_runner.js:4911:14)\nFrom Your Spec Code:\n    at Context.eval (http://localhost:45997/__cypress/tests?p=cypress/integration/herokuDeploy.spec.js:106:8)",
+                "diff": null
+              },
+              "uuid": "9af6a232-5c38-4c83-898a-fa0fd0c5dc77",
+              "parentUUID": "b3eabb93-193e-43da-ba8a-7179fdf1ef72",
+>>>>>>> 559911080fdafeca3007288fad516b0b60ac0118
               "isHook": false,
               "skipped": false
             },
@@ -69,8 +95,13 @@
               "context": null,
               "code": "cy.contains(PESQUISAR).click();\ncy.contains(MARTIN).should(\"exist\");",
               "err": {},
+<<<<<<< HEAD
               "uuid": "7005e077-3c7b-4b36-b56f-e73f1310858d",
               "parentUUID": "6547e7c0-d2b7-45ea-a048-cd9262f0a970",
+=======
+              "uuid": "d24ab173-c952-4c0c-9ac1-8bec607d66f6",
+              "parentUUID": "b3eabb93-193e-43da-ba8a-7179fdf1ef72",
+>>>>>>> 559911080fdafeca3007288fad516b0b60ac0118
               "isHook": false,
               "skipped": true
             },
@@ -87,8 +118,13 @@
               "context": null,
               "code": "cy.contains(\"Mudar de Realidade\").click();\ncy.contains(PESQUISAR).click();\ncy.contains(INVERTED_MARTIN).should(\"exist\");",
               "err": {},
+<<<<<<< HEAD
               "uuid": "2d0b6fad-d8ae-4c78-96d4-359f5d29c51b",
               "parentUUID": "6547e7c0-d2b7-45ea-a048-cd9262f0a970",
+=======
+              "uuid": "12c7cde3-4ccf-4607-a776-d3b35d7db95f",
+              "parentUUID": "b3eabb93-193e-43da-ba8a-7179fdf1ef72",
+>>>>>>> 559911080fdafeca3007288fad516b0b60ac0118
               "isHook": false,
               "skipped": true
             },
@@ -105,8 +141,13 @@
               "context": null,
               "code": "cy.contains(PESQUISAR).click();\ncy.contains(MARTIN).should(\"exist\");\ncy.contains(\"Próximo\").click();\ncy.contains(\"2\").should(\"exist\");\ncy.contains(Claudia).should(\"exist\");\ncy.contains(\"Anterior\").click();\ncy.contains(\"1\").should(\"exist\");\ncy.contains(MARTIN).should(\"exist\");",
               "err": {},
+<<<<<<< HEAD
               "uuid": "5e9e4a9c-1cff-4481-8d66-45bff2b032f5",
               "parentUUID": "6547e7c0-d2b7-45ea-a048-cd9262f0a970",
+=======
+              "uuid": "8d85c4e6-faac-4cee-9cb8-921f989d8d64",
+              "parentUUID": "b3eabb93-193e-43da-ba8a-7179fdf1ef72",
+>>>>>>> 559911080fdafeca3007288fad516b0b60ac0118
               "isHook": false,
               "skipped": true
             }
@@ -114,6 +155,7 @@
           "suites": [],
           "passes": [],
           "failures": [
+<<<<<<< HEAD
             "2d8efc4e-1f6c-484f-b695-ac6c275b7074"
           ],
           "pending": [],
@@ -123,6 +165,17 @@
             "5e9e4a9c-1cff-4481-8d66-45bff2b032f5"
           ],
           "duration": 929,
+=======
+            "9af6a232-5c38-4c83-898a-fa0fd0c5dc77"
+          ],
+          "pending": [],
+          "skipped": [
+            "d24ab173-c952-4c0c-9ac1-8bec607d66f6",
+            "12c7cde3-4ccf-4607-a776-d3b35d7db95f",
+            "8d85c4e6-faac-4cee-9cb8-921f989d8d64"
+          ],
+          "duration": 597,
+>>>>>>> 559911080fdafeca3007288fad516b0b60ac0118
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
