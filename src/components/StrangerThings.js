@@ -1,7 +1,9 @@
 import React from 'react';
 import CharactersService from '../services/charactersAPI';
 import Table from './Table';
-// esqueci de mudar a banch, por isso esse comentario, para poder subir o projeto
+
+const status = process.env.development;
+
 const getRealityClass = (hereIsTheUpsideDownWorld) => (
   hereIsTheUpsideDownWorld ? 'upside-down' : 'stranger-things'
 );
@@ -113,6 +115,7 @@ class StrangerThings extends React.Component {
           hereIsTheUpsideDownWorld,
         )}` }
       >
+        <div hidden><h2>{status}</h2></div>
         <div className="content strangerfy">
           <div className="change-reality">
             <button type="button" onClick={ this.changeRealityClick }>
