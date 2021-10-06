@@ -1,0 +1,132 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 0,
+    "pending": 0,
+    "failures": 2,
+    "start": "2021-10-06T15:05:53.126Z",
+    "end": "2021-10-06T15:06:30.065Z",
+    "duration": 36939,
+    "testsRegistered": 2,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "d9dc3fe7-1fe5-418a-80c7-a7d2148bfd53",
+      "title": "",
+      "fullFile": "cypress/integration/developerMode.spec.js",
+      "file": "cypress/integration/developerMode.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "675dfe0b-54f6-4b76-bb02-ff0e4a613067",
+          "title": "3 - Verifica os multi-ambientes e modo de desenvolvimento",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Será validado que a tag de desenvolvimento foi encontrada no frontend de desenvolvimento",
+              "fullTitle": "3 - Verifica os multi-ambientes e modo de desenvolvimento Será validado que a tag de desenvolvimento foi encontrada no frontend de desenvolvimento",
+              "timedOut": null,
+              "duration": 28358,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(FRONT_URL);\ncy.contains(\"Em desenvolvimento\").should(\"exist\");",
+              "err": {
+                "message": "AssertionError: Timed out retrying: Expected to find content: 'Em desenvolvimento' but never did.",
+                "estack": "AssertionError: Timed out retrying: Expected to find content: 'Em desenvolvimento' but never did.\n    at Context.eval (https://diserafim-ft.herokuapp.com/__cypress/tests?p=cypress/integration/developerMode.spec.js:104:39)",
+                "diff": null
+              },
+              "uuid": "2ffcc553-cf87-49a4-a687-4c2d10f92909",
+              "parentUUID": "675dfe0b-54f6-4b76-bb02-ff0e4a613067",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Será validado que a tag de desenvolvimento não existe no frontend de produção",
+              "fullTitle": "3 - Verifica os multi-ambientes e modo de desenvolvimento Será validado que a tag de desenvolvimento não existe no frontend de produção",
+              "timedOut": null,
+              "duration": 1122,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(FRONT_URL_PROD);\ncy.contains(\"Em desenvolvimento\").should(\"not.exist\");",
+              "err": {
+                "message": "CypressError: `cy.visit()` failed trying to load:\n\nhttps://diserafim-pd.herokuapp.com/.\n\nThe response we received from your web server was:\n\n  > 404: Not Found\n\nThis was considered a failure because the status code was not `2xx`.\n\nIf you do not want status codes to cause failures pass the option: `failOnStatusCode: false`",
+                "estack": "CypressError: `cy.visit()` failed trying to load:\n\nhttps://diserafim-pd.herokuapp.com/.\n\nThe response we received from your web server was:\n\n  > 404: Not Found\n\nThis was considered a failure because the status code was not `2xx`.\n\nIf you do not want status codes to cause failures pass the option: `failOnStatusCode: false`\n    at https://diserafim-ft.herokuapp.com/__cypress/runner/cypress_runner.js:158062:25\n    at visitFailedByErr (https://diserafim-ft.herokuapp.com/__cypress/runner/cypress_runner.js:157432:12)\n    at https://diserafim-ft.herokuapp.com/__cypress/runner/cypress_runner.js:158042:13\n    at tryCatcher (https://diserafim-ft.herokuapp.com/__cypress/runner/cypress_runner.js:10325:23)\n    at Promise._settlePromiseFromHandler (https://diserafim-ft.herokuapp.com/__cypress/runner/cypress_runner.js:8260:31)\n    at Promise._settlePromise (https://diserafim-ft.herokuapp.com/__cypress/runner/cypress_runner.js:8317:18)\n    at Promise._settlePromise0 (https://diserafim-ft.herokuapp.com/__cypress/runner/cypress_runner.js:8362:10)\n    at Promise._settlePromises (https://diserafim-ft.herokuapp.com/__cypress/runner/cypress_runner.js:8438:18)\n    at _drainQueueStep (https://diserafim-ft.herokuapp.com/__cypress/runner/cypress_runner.js:5032:12)\n    at _drainQueue (https://diserafim-ft.herokuapp.com/__cypress/runner/cypress_runner.js:5025:9)\n    at Async.../../node_modules/bluebird/js/release/async.js.Async._drainQueues (https://diserafim-ft.herokuapp.com/__cypress/runner/cypress_runner.js:5041:5)\n    at Async.drainQueues (https://diserafim-ft.herokuapp.com/__cypress/runner/cypress_runner.js:4911:14)\nFrom Your Spec Code:\n    at Context.eval (https://diserafim-ft.herokuapp.com/__cypress/tests?p=cypress/integration/developerMode.spec.js:107:8)",
+                "diff": null
+              },
+              "uuid": "b63974c1-ce4b-49e7-85a7-7fec0a1e8e4b",
+              "parentUUID": "675dfe0b-54f6-4b76-bb02-ff0e4a613067",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "2ffcc553-cf87-49a4-a687-4c2d10f92909",
+            "b63974c1-ce4b-49e7-85a7-7fec0a1e8e4b"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 29480,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false
+      },
+      "version": "4.1.0"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "4.1.0"
+    }
+  }
+}
