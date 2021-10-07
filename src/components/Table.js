@@ -38,4 +38,3 @@ Table.propTypes = {
 };
 
 export default Table;
-
