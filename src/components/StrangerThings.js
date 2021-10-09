@@ -9,7 +9,6 @@ const {
   REACT_APP_HAWKINS_TIMEOUT,
   REACT_APP_UPSIDEDOWN_URL,
   REACT_APP_UPSIDEDOWN_TIMEOUT,
-  DEVELOPMENT,
 } = process.env;
 
 const getRealityClass = (hereIsTheUpsideDownWorld) => (
@@ -38,7 +37,7 @@ class StrangerThings extends React.Component {
       characterName: '',
       characters: [],
       page: 1,
-      development: DEVELOPMENT,
+      development: true,
     };
 
     this.handleInput = this.handleInput.bind(this);
