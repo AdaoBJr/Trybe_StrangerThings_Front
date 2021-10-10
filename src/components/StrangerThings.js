@@ -10,7 +10,6 @@ const { REACT_APP_HAWKINS_URL,
   REACT_APP_HAWKINS_TIMEOUT,
   REACT_APP_UPSIDEDOWN_URL,
   REACT_APP_UPSIDEDOWN_TIMEOUT,
-  REACT_APP_STATUS,
 } = process.env;
 
 const strangerThingsConfig = {
@@ -120,7 +119,6 @@ class StrangerThings extends React.Component {
           hereIsTheUpsideDownWorld,
         )}` }
       >
-        <div><h2 style={ { color: 'red' } }>{REACT_APP_STATUS}</h2></div>
         <div className="content strangerfy">
           <div className="change-reality">
             <button type="button" onClick={ this.changeRealityClick }>
