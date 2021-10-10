@@ -120,7 +120,7 @@ class StrangerThings extends React.Component {
           hereIsTheUpsideDownWorld,
         )}` }
       >
-        <div><h2 style={ { color: 'blue' } }>{REACT_APP_STATUS}</h2></div>
+        <div><h2 style={ { color: 'red' } }>{REACT_APP_STATUS}</h2></div>
         <div className="content strangerfy">
           <div className="change-reality">
             <button type="button" onClick={ this.changeRealityClick }>
