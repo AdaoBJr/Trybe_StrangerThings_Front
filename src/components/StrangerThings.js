@@ -62,6 +62,8 @@ class StrangerThings extends React.Component {
     });
   }
 
+  // for push
+
   searchClick() {
     this.setState(
       {
