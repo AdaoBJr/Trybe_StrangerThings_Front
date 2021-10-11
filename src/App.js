@@ -8,6 +8,7 @@ import StrangerThings from './components/StrangerThings';
 function App() {
   return (
     <div className="App">
+      { !process.env.REACT_APP_DEVELOPMENT ? null : <h2>Em desenvolvimento</h2> }
       <StrangerThings />
     </div>
   );
