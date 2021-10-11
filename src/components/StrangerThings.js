@@ -13,7 +13,7 @@ const { REACT_APP_HAWKINS_URL, REACT_APP_HAWKINS_TIMEOUT,
 
 const strangerThingsConfig = {
   url: REACT_APP_HAWKINS_URL,
-  timeout: parseInt(REACT_APP_UPSIDEDOWN_TIMEOUT, 10),
+  timeout: parseInt(REACT_APP_HAWKINS_TIMEOUT, 10),
 };
 
 const upsideDownConfig = {
