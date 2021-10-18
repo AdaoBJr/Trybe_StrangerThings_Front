@@ -1,4 +1,3 @@
- 
 {
   "stats": {
     "suites": 1,
@@ -6,9 +5,9 @@
     "passes": 2,
     "pending": 0,
     "failures": 0,
-    "start": "2021-09-30T00:41:23.565Z",
-    "end": "2021-09-30T00:41:23.625Z",
-    "duration": 60,
+    "start": "2021-10-10T13:27:33.659Z",
+    "end": "2021-10-10T13:27:33.727Z",
+    "duration": 68,
     "testsRegistered": 2,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -19,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "4b5224e4-6ace-455c-9249-04ef8ed8ce3a",
+      "uuid": "7ad60052-e115-4854-94d3-fe6108dbbb4b",
       "title": "",
       "fullFile": "cypress/integration/VerifyEnv.spec.js",
       "file": "cypress/integration/VerifyEnv.spec.js",
@@ -28,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "8f49cbf2-8189-4997-8258-5f995f6da9da",
+          "uuid": "8b99dfe2-ae00-4234-ac65-2aa3cfc16d0b",
           "title": "2 - Verifica as variáveis de ambiente do frontend",
           "fullFile": "",
           "file": "",
@@ -39,7 +38,7 @@
               "title": "Será validado se as variáveis do hawkins existem",
               "fullTitle": "2 - Verifica as variáveis de ambiente do frontend Será validado se as variáveis do hawkins existem",
               "timedOut": null,
-              "duration": 26,
+              "duration": 33,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -48,8 +47,8 @@
               "context": null,
               "code": "expect(Cypress.env(REACT_APP_HAWKINS_URL)).to.exist;\nexpect(Cypress.env(REACT_APP_HAWKINS_TIMEOUT)).to.exist;",
               "err": {},
-              "uuid": "808e15eb-0e03-49be-aa7f-26a0e09ef5d7",
-              "parentUUID": "8f49cbf2-8189-4997-8258-5f995f6da9da",
+              "uuid": "a174fe45-1fb5-49cd-acbb-27bbac33e9aa",
+              "parentUUID": "8b99dfe2-ae00-4234-ac65-2aa3cfc16d0b",
               "isHook": false,
               "skipped": false
             },
@@ -57,7 +56,7 @@
               "title": "Será validado se as variáveis do upsidesown existem",
               "fullTitle": "2 - Verifica as variáveis de ambiente do frontend Será validado se as variáveis do upsidesown existem",
               "timedOut": null,
-              "duration": 15,
+              "duration": 17,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -66,21 +65,21 @@
               "context": null,
               "code": "expect(Cypress.env(REACT_APP_UPSIDEDOWN_URL)).to.exist;\nexpect(Cypress.env(REACT_APP_UPSIDEDOWN_TIMEOUT)).to.exist;",
               "err": {},
-              "uuid": "09b43698-1061-4712-9d23-7f66bc8f5261",
-              "parentUUID": "8f49cbf2-8189-4997-8258-5f995f6da9da",
+              "uuid": "115069c4-7eb3-4c4c-b013-0553fccdefef",
+              "parentUUID": "8b99dfe2-ae00-4234-ac65-2aa3cfc16d0b",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "808e15eb-0e03-49be-aa7f-26a0e09ef5d7",
-            "09b43698-1061-4712-9d23-7f66bc8f5261"
+            "a174fe45-1fb5-49cd-acbb-27bbac33e9aa",
+            "115069c4-7eb3-4c4c-b013-0553fccdefef"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 41,
+          "duration": 50,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
