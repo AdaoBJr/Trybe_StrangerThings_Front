@@ -4,6 +4,8 @@ import Table from './Table';
 
 require('dotenv').config();
 
+const server = process.env.SERVER_ENV;
+
 const getRealityClass = (hereIsTheUpsideDownWorld) => (
   hereIsTheUpsideDownWorld ? 'upside-down' : 'stranger-things'
 );
