@@ -2,21 +2,17 @@ import React from 'react';
 import CharactersService from '../services/charactersAPI';
 import Table from './Table';
 
-require('dotenv').config();
-
-const server = process.env.SERVER_ENV;
-
 const getRealityClass = (hereIsTheUpsideDownWorld) => (
   hereIsTheUpsideDownWorld ? 'upside-down' : 'stranger-things'
 );
 
 const strangerThingsConfig = {
-  url: 'https://luizfrodrigues-bk.herokuapp.com/',
+  url: 'http://localhost:3002',
   timeout: 30000,
 };
 
 const upsideDownConfig = {
-  url: 'https://luizfrodrigues-bd.herokuapp.com/',
+  url: 'http://localhost:3003',
   timeout: 30000,
 };
 
@@ -124,7 +120,6 @@ class StrangerThings extends React.Component {
               Mudar de Realidade
             </button>
           </div>
-          <p>{server === 'desenvolvimento' && 'Em desenvolvimento'}</p>
           <div>
             <input
               placeholder="Nome do Personagem"
