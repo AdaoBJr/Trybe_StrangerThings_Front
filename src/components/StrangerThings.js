@@ -7,12 +7,12 @@ const getRealityClass = (hereIsTheUpsideDownWorld) => (
 );
 
 const strangerThingsConfig = {
-  url: 'https://luizfrodrigues-bk.herokuapp.com/',
+  url: 'http://localhost:3002',
   timeout: 30000,
 };
 
 const upsideDownConfig = {
-  url: 'https://luizfrodrigues-bd.herokuapp.com/',
+  url: 'http://localhost:3003',
   timeout: 30000,
 };
 
