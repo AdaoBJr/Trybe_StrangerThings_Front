@@ -4,24 +4,18 @@ import Table from './Table';
 
 require('dotenv').config();
 
-const {
-  HAWKINS_URL,
-  REACT_APP_HAWKINS_TIMEOUT,
-  REACT_APP_UPSIDEDOWN_URL,
-  REACT_APP_UPSIDEDOWN_TIMEOUT } = process.env;
-
 const getRealityClass = (hereIsTheUpsideDownWorld) => (
   hereIsTheUpsideDownWorld ? 'upside-down' : 'stranger-things'
 );
 
 const strangerThingsConfig = {
-  url: HAWKINS_URL,
-  timeout: REACT_APP_HAWKINS_TIMEOUT,
+  url: 'https://luizfrodrigues-bk.herokuapp.com/',
+  timeout: 30000,
 };
 
 const upsideDownConfig = {
-  url: REACT_APP_UPSIDEDOWN_URL,
-  timeout: REACT_APP_UPSIDEDOWN_TIMEOUT,
+  url: 'https://luizfrodrigues-bd.herokuapp.com/',
+  timeout: 30000,
 };
 
 const charactersService = new CharactersService(strangerThingsConfig);
