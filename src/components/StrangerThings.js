@@ -119,7 +119,6 @@ class StrangerThings extends React.Component {
               {' '}
               Mudar de Realidade
             </button>
-            <p>{server === 'development' && 'Em desenvolvimento'}</p>
           </div>
           <div>
             <input
