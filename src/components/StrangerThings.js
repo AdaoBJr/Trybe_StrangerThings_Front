@@ -2,6 +2,8 @@ import React from 'react';
 import CharactersService from '../services/charactersAPI';
 import Table from './Table';
 
+const server = process.env.SERVER_ENV;
+
 const getRealityClass = (hereIsTheUpsideDownWorld) => (
   hereIsTheUpsideDownWorld ? 'upside-down' : 'stranger-things'
 );
@@ -120,7 +122,7 @@ class StrangerThings extends React.Component {
               Mudar de Realidade
             </button>
           </div>
-
+          <p>{server === 'desenvolvimento' && 'Em desenvolvimento'}</p>
           <div>
             <input
               placeholder="Nome do Personagem"
