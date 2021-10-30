@@ -105,6 +105,16 @@ class StrangerThings extends React.Component {
     );
   }
 
+  ambientRender() {
+    if (process.env.REACT_APP_AMBIENT === 'dev') {
+      return (
+        <div>
+          <p>Em desenvolvimento</p>
+        </div>
+      );
+    }
+  }
+
   render() {
     const {
       hereIsTheUpsideDownWorld, characterName, characters, page,
@@ -122,7 +132,7 @@ class StrangerThings extends React.Component {
               Mudar de Realidade
             </button>
           </div>
-
+          { this.ambientRender() }
           <div>
             <input
               placeholder="Nome do Personagem"
