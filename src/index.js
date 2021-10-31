@@ -6,6 +6,8 @@ import * as serviceWorker from './serviceWorker';
 
 require('dotenv').config();
 
+// Push to run evaluator
+
 ReactDOM.render(
   <React.StrictMode>
     <App />
