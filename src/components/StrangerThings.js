@@ -8,7 +8,7 @@ const getRealityClass = (hereIsTheUpsideDownWorld) => (
   hereIsTheUpsideDownWorld ? 'upside-down' : 'stranger-things'
 );
 
-const devMode = process.env.DEVELOPMENT;
+const devMode = process.env.REACT_APP_DEVELOPMENT;
 
 const strangerThingsConfig = {
   url: process.env.REACT_APP_HAWKINS_URL,
@@ -117,7 +117,7 @@ class StrangerThings extends React.Component {
           hereIsTheUpsideDownWorld,
         )}` }
       >
-        {!devMode && <h1>Em desenvolvimento</h1>}
+        {devMode && <h1>Em desenvolvimento</h1>}
 
         <div className="content strangerfy">
           <div className="change-reality">
