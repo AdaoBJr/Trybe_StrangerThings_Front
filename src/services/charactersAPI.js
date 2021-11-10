@@ -7,7 +7,6 @@ class CharactersService {
       baseURL: url,
       timeout,
     });
-    console.log('teste');
   }
 
   async getCharacters(name, page, size) {
