@@ -9,6 +9,7 @@ function App() {
       {process.env.REACT_APP_DEVELOPMENT === 'true' && <h1>Em desenvolvimento</h1>}
       <StrangerThings />
     </div>
+    // obrigado Andre!
   );
 }
 
