@@ -1,7 +1,7 @@
 import React from 'react';
 import CharactersService from '../services/charactersAPI';
 import Table from './Table';
-import 'dotenv/config'
+import 'dotenv/config';
 
 // require('dotenv').config();
 
