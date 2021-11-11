@@ -9,6 +9,7 @@ const {
   REACT_APP_HAWKINS_TIMEOUT,
   REACT_APP_UPSIDEDOWN_URL,
   REACT_APP_UPSIDEDOWN_TIMEOUT,
+  REACT_APP_AMBIENT,
 } = process.env;
 
 const getRealityClass = (hereIsTheUpsideDownWorld) => (
@@ -131,7 +132,6 @@ class StrangerThings extends React.Component {
               Mudar de Realidade
             </button>
           </div>
-
           <div>
             <input
               placeholder="Nome do Personagem"
@@ -142,11 +142,9 @@ class StrangerThings extends React.Component {
             />
             <button type="button" onClick={ this.searchClick }>Pesquisar</button>
           </div>
-
           <div>
             <Table characters={ characters } />
           </div>
-
           <div>
             <p>
               Página atual:
@@ -157,6 +155,10 @@ class StrangerThings extends React.Component {
             <button type="button" onClick={ this.previousPage }>Anterior</button>
             <button type="button" onClick={ this.nextPage }>Próximo</button>
           </div>
+        </div>
+        <div>
+          { (REACT_APP_AMBIENT === 'dev')
+            ? <p className="development">Em desenvolvimento</p> : false }
         </div>
       </div>
     );
